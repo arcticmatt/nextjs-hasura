@@ -22,7 +22,8 @@ function AppInner({ Component, pageProps }: AppProps): JSX.Element {
     });
 
     return unsubscribe;
-  }, [setUser]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const headers: { [key: string]: string } =
     authState.token != null
