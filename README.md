@@ -1,3 +1,3 @@
-Reusable template for Next.js projects.
+Reusable template for Next.js projects that use Hasura.
 
-Sets up TypeScript and eslint.
+Firebase auth + Relay + Hasura.
