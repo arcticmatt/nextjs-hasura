@@ -11,11 +11,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "add": "^2.0.6",
+    "firebase": "9.0.0-beta.6",
+    "invariant": "^2.2.4",
     "next": "^10.0.0",
     "react": "^18.0.0-alpha-464f27572-20210713",
     "react-dom": "^18.0.0-alpha-464f27572-20210713",
     "react-relay": "^11.0.2",
-    "relay-runtime": "^11.0.2"
+    "relay-runtime": "^11.0.2",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@types/react": "^17.0.14",
