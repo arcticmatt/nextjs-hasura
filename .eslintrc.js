@@ -12,6 +12,9 @@ module.exports = {
     "airbnb",
     "prettier",
   ],
+  globals: {
+    JSX: "readonly",
+  },
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -23,6 +26,14 @@ module.exports = {
   plugins: ["react", "@typescript-eslint", "prettier"],
   rules: {
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+    ],
+
+    "func-names": "off",
+    "import/no-unresolved": "off",
+    "no-unused-vars": "off",
 
     "prettier/prettier": "error",
 
