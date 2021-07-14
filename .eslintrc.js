@@ -26,6 +26,8 @@ module.exports = {
   plugins: ["react", "@typescript-eslint", "prettier"],
   rules: {
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
@@ -37,9 +39,11 @@ module.exports = {
 
     "prettier/prettier": "error",
 
+    "react/destructuring-assignment": "off",
     "react/jsx-filename-extension": ["error", { extensions: [".tsx", ".jsx"] }],
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
     "react-hooks/rules-of-hooks": "error",
   },
 };

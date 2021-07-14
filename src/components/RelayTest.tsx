@@ -16,9 +16,7 @@ function Inner(): JSX.Element {
     variables: {},
   });
 
-  console.log("data", data);
-
-  return <div>hi</div>;
+  return <pre>{JSON.stringify(data)}</pre>;
 }
 
 export default function RelayTest(): JSX.Element {
